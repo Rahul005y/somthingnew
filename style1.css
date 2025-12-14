@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1950&q=80") no-repeat center center;
+    background-size: cover;
+
+
+}
+
+/* Desktop */
+.desktop {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filebox {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+     gap: 6px;
+     align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.filebox img {
+    width: 50%;
+}
+
+.filebox span {
+    text-align: center;
+    font-size: 14px;
+
+}
+
+/* Taskbar */
+.box {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    background: rgba(58, 58, 58, 0.85);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+/* Windows icon */
+.windowimg img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Search bar */
+.search {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    filter: invert(34%) sepia(98%) saturate(1200%) hue-rotate(200deg);
+    cursor: pointer;
+}
+
+.search input {
+    height: 32px;
+    width: 200px;
+    padding-left: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* App icons in taskbar */
+.imgcard {
+    display: flex;
+    gap: 20px;
+}
+
+.imgcard img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Context menu */
+.cards {
+    background: #ccc;
+    width: 150px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.cards ul {
+    list-style: none;
+}
+
+.cards li {
+    padding: 6px;
+    cursor: pointer;
+}
+
+.cards li:hover {
+    background: white;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background: #ccc;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.submenu li:hover {
+    background: white;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.window-popup {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.window-popup img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.window-popup img:hover {
+    transform: scale(1.1);
+}

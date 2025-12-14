@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: #3D91F4;
+}
+
+/* Main menu */
+.cards {
+    background: #ccc;
+    width: 150px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.cards ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards li {
+    padding: 6px;
+    cursor: pointer;
+}
+
+.cards li:hover {
+    background: white;
+}
+
+
+.has-submenu {
+    position: relative;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background: #ccc;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.submenu li {
+    padding: 6px;
+}
+
+.submenu li:hover {
+    background: white;
+}
+
+
+.has-submenu:hover .submenu {
+    display: block;
+}

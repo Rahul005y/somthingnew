@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Desktop UI</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <!-- Context Menu -->
+    <div class="cards" id="menu">
+        <ul>
+            <li>Refresh</li>
+            <li class="has-submenu">
+                More Options ▸
+                <ul class="submenu">
+                    <li>Open</li>
+                    <li>Rename</li>
+                    <li>Properties</li>
+                </ul>
+            </li>
+            <li>Cut</li>
+            <li>Copy</li>
+            <li>Edit</li>
+            <li>Delete</li>
+        </ul>
+    </div>
+
+    <!-- Desktop Icons -->
+    <div class="desktop">
+        <div class="filebox">
+            <img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" class="icon">
+            <span>My Computer</span>
+        </div>
+        <div class="filebox">
+            <img src="https://cdn-icons-png.flaticon.com/512/833/833524.png" class="icon">
+            <span>Documents</span>
+        </div>
+        <div class="filebox">
+            <img src="https://cdn-icons-png.flaticon.com/512/716/716767.png" class="icon">
+            <span>Pictures</span>
+        </div>
+        <div class="filebox">
+            <img src="https://cdn-icons-png.flaticon.com/512/727/727218.png" class="icon">
+            <span>Music</span>
+        </div>
+        <div class="filebox">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" class="icon">
+            <span>GitHub</span>
+        </div>
+        <div class="filebox">
+            <img src="thumb_thumb__ecycle__in__mpty-removebg-preview.png" class="icon">
+            <span>Recycle Bin</span>
+        </div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="box">
+        <div class="windowimg">
+            <img src="window.png" alt="Windows Icon">
+        </div>
+        <div class="search">
+            <img src="https://www.svgrepo.com/show/532555/search.svg" class="search-icon">
+            <input type="text" id="inp" placeholder="Search">
+        </div>
+        <div class="imgcard">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732223.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/727/727218.png" alt="">
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
